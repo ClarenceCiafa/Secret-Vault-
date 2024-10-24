@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Secret Vault - Forum</title>
+    <link rel="stylesheet" href="/Secret Vault/Forum/forum.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <div class="logo-text-container"> 
+        Secret<span class="vault-text">Vault</span>
+        <img src="/Secret Vault/Immagini/Logo SecretVault.png" alt="Logo Secret Vault" class="navbar-logo-img">
+      </div>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/index.html#cosa-e-secret-vault">Cosa è Secret Vault</a></li>
+      <li><a href="/Secret Vault/Collezione/collezione.html">La mia Collezione</a></li>
+      <li><a href="/Secret Vault/Forum/forum.html">Forum</a></li>
+    </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+      
+    <main class="forum-container">
+        <h1><span class="forum-title">For<span>um</span></span></h1>
+
+        <!-- Barra di ricerca -->
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Cerca articoli...">
+            <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+
+        <section class="articles">
+            <h2>Articoli Recenti</h2>
+            <div class="articles-grid">
+                <!-- Articolo 1 -->
+                <div class="article-card">
+                    <img src="/Secret Vault/Immagini/Power9.jpg" alt="Immagine articolo 1">
+                    <div class="article-info">
+                        <div class="article-meta" data-author="Clarence" data-date="11/10/2023">
+                            <span class="author"><i class="fas fa-user"></i> Clarence</span>
+                            <span class="date"><i class="fas fa-calendar-alt"></i> 11/10/2023</span>
+                        </div>
+                        <h3>Power Nine</h3>
+                        <p>Power Nine è un termine inglese che si riferisce ad un gruppo di nove carte del gioco di
+                            carte collezionabili Magic: l'Adunanza...</p>
+                        <a class="read-more" data-target="articolo-1">Leggi di più</a>
+                    </div>
+                </div>
+
+                <!-- Articolo 2 -->
+                <div class="article-card">
+                    <img src="/Secret Vault/Immagini/SecretLair.jpg" alt="Immagine articolo 2">
+                    <div class="article-info">
+                        <div class="article-meta" data-author="Hyde" data-date="11/10/2023">
+                            <span class="author"><i class="fas fa-user"></i> Hyde</span>
+                            <span class="date"><i class="fas fa-calendar-alt"></i> 11/10/2023</span>
+                        </div>
+                        <h3>Cosa sono i Secret Lair ?</h3>
+                        <p>I Secret Lair sono serie di carte in edizione limitata, curate con estrema attenzione e
+                            particolarità...</p>
+                        <a class="read-more" data-target="articolo-2">Leggi di più</a>
+                    </div>
+                </div 
+            </div>
+        </section>
+    </main>
+
+    <div class="overlay">
+        <div class="overlay-content">
+            <span class="close-overlay">&times;</span>
+            <div class="article-meta">
+                <!-- Gli elementi author e date verranno aggiunti qui dinamicamente -->
+            </div>
+            <!-- Qui verrà caricato il contenuto dell'articolo -->
+        </div>
+    </div>
+
+    <!-- Contenuto completo degli articoli (nascosto inizialmente) -->
+    <div id="articolo-1" style="display: none;">
+        <!-- ... (contenuto dell'articolo 1) ... -->
+
+        <h2>Power Nine: Il Mito, la Leggenda, la Potenza</h2>
+
+        <p>Nell'universo di Magic: The Gathering, poche cose evocano un senso di meraviglia e timore reverenziale come
+            le Power Nine. Queste nove carte, stampate per la prima volta nel 1993 nei set Alpha, Beta e Unlimited, sono
+            considerate le più potenti e iconiche del gioco, avvolte in un'aura di leggenda e mistero.</p>
+
+        <h3>Un Potere Ineguagliabile</h3>
+
+        <p>Le Power Nine non sono semplici carte; sono artefatti magici di immenso potere, capaci di alterare il corso
+            di una partita in un istante. La loro capacità di generare mana illimitato, pescare carte a volontà o
+            manipolare il tempo le rende strumenti di gioco devastanti, capaci di creare strategie e combo
+            ineguagliabili.</p>
+
+        <h3>Le Nove Gemme del Potere</h3>
+
+        <p>Ecco le nove carte che compongono le leggendarie Power Nine:</p>
+
+        <ul>
+            <li><strong>Ancestral Recall:</strong> Pesca tre carte per un solo mana blu, un vantaggio di carte
+                incredibile.</li>
+            <li><strong>Black Lotus:</strong> Produce tre mana di qualsiasi colore, sacrificandosi. Un'esplosione di
+                potenza iniziale senza pari.</li>
+            <li><strong>Mox Emerald, Jet, Pearl, Ruby, Sapphire:</strong> Questi cinque artefatti producono un mana del
+                colore corrispondente, senza alcun costo. Una fonte di mana illimitato fin dai primi turni.</li>
+            <li><strong>Time Walk:</strong> Prendi un turno extra, raddoppiando le tue azioni e lasciando l'avversario
+                indietro.</li>
+            <li><strong>Timetwister:</strong> Tutti i giocatori rimescolano mano, cimitero e grimorio nel mazzo e
+                pescano sette carte. Un reset totale della partita che può ribaltare le sorti dello scontro.</li>
+        </ul>
+
+        <h3>Un'Eredità Intramontabile</h3>
+
+        <p>A causa della loro potenza straordinaria, le Power Nine sono state bandite dalla maggior parte dei formati di
+            gioco competitivo. Tuttavia, la loro eredità continua a vivere, alimentando la fantasia dei giocatori e il
+            desiderio dei collezionisti. Queste carte sono un simbolo della storia di Magic, un'epoca d'oro in cui il
+            potere magico era senza limiti e le possibilità di gioco infinite.</p>
+
+        <p>Oggi, le Power Nine sono oggetti da collezione estremamente rari e preziosi, ricercati da appassionati di
+            tutto il mondo. Possedere una di queste carte è come tenere tra le mani un frammento della storia di Magic,
+            un tesoro inestimabile che incarna l'essenza stessa del gioco.</p>
+
+        <h3>Oltre il Gioco</h3>
+
+        <p>Le Power Nine sono molto più che semplici carte; sono un simbolo di un'epoca, un'icona che trascende il gioco
+            stesso. Sono un'opera d'arte, un pezzo di storia, un investimento e, soprattutto, un sogno per ogni
+            appassionato di Magic: The Gathering.</p>
+
+
+    </div>
+    <div id="articolo-2" style="display: none;">
+        <h2>Cosa sono i Secret Lair ?</h2>
+        <!-- ... (contenuto dell'articolo 2) ... -->
+
+        <h2>Secret Lair: Tesori Unici per Collezionisti e Appassionati</h2>
+
+        <p>I Secret Lair sono molto più di semplici carte di Magic: The Gathering. Sono <strong>serie inedite e
+                limitate</strong>, curate con un'attenzione maniacale per i dettagli, che accendono la passione dei
+            collezionisti e la fantasia dei giocatori.</p>
+
+        <h3>Cosa rende i Secret Lair così speciali?</h3>
+
+        <p>Ecco alcuni elementi distintivi:</p>
+
+        <h4>Arte Alternativa che Spiazza:</h4>
+
+        <p>Dimenticate le illustrazioni classiche! I Secret Lair presentano <strong>opere d'arte alternative e
+                sorprendenti</strong>, create da artisti fuori dagli schemi, come street artist, designer di copertine
+            di album musicali e talenti visionari provenienti da mondi creativi inaspettati.</p>
+
+        <h4>Originalità Pura:</h4>
+
+        <p>Alcune serie di Secret Lair spingono ancora oltre i confini dell'arte, includendo <strong>opere d'arte
+                originali</strong> create appositamente per queste edizioni esclusive. Un tocco di autenticità che rende
+            ogni carta un piccolo capolavoro.</p>
+
+        <h4>Tiratura Limitata: La Caccia al Tesoro:</h4>
+
+        <p>Ogni Secret Lair ha una <strong>tiratura limitata</strong>, il che la rende un oggetto raro e ambito dai
+            collezionisti. La caccia al Secret Lair perfetto aggiunge un brivido in più all'esperienza di Magic.</p>
+
+        <h4>Esclusive Irripetibili:</h4>
+
+        <p>Le carte di Secret Lair non si trovano nelle normali espansioni di Magic: The Gathering. Sono
+            <strong>esclusive</strong> e possono essere acquistate solo separatamente, per un tocco di originalità e
+            unicità alla tua collezione.
+        </p>
+
+        <h3>In Sintesi:</h3>
+
+        <p>I Secret Lair sono un'esplosione di creatività, rarità ed esclusività che arricchisce l'universo di Magic:
+            The Gathering. Se sei un collezionista alla ricerca di tesori unici o un giocatore che desidera carte fuori
+            dal comune, i Secret Lair sono la risposta ai tuoi desideri.</p>
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    Secret<span class="vault-text">Vault</span>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/index.html#cosa-e-secret-vault">Cosa è Secret Vault?</a></li>
+                    <li><a href="/Secret Vault/Collezione/collezione.html">La mia Collezione</a></li>
+                    <li><a href="/Secret Vault/Forum/forum.html">Forum</a></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Secret Vault. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/Secret Vault/Forum/forum.js"></script>
+<script src="/main.js"></script>
+</body>
+</html>

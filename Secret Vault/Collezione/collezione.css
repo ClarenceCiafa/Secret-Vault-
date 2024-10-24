@@ -1,0 +1,405 @@
+/* Stili Navbar */
+.navbar {
+    background-color: #fff;
+    color: #333;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.navbar.transparent {
+    background-color: transparent;
+    backdrop-filter: none;
+}
+
+.navbar.glass {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    margin-left: 20px;
+    color: #333;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+.vault-text {
+    color: #007bff;
+}
+
+/* Stili per il dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+.dropbtn {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    max-height: 150px;
+    overflow-y: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    flex: 1;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.dropdown-content a:hover {
+    background-color: #f5f5f5;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: fadeInDown 0.3s ease;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Icona del filtro */
+.dropbtn i {
+    margin-left: 5px;
+}
+
+/* Animazione fadeInDown */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Linea di scorrimento */
+.scroll-line {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0; /* Posiziona la linea a destra */
+    bottom: 0;
+    width: 3px;
+    background-color: #007bff;
+    cursor: pointer;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+    height: 100%;
+}
+
+.scroll-line:hover {
+    opacity: 1;
+}
+
+/* Stili per la sezione "La mia collezione" */
+.la-mia-collezione {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.la-mia-collezione .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+}
+
+.la-mia-collezione h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: black;
+    display: inline-block;
+    font-size: 2em;
+}
+
+.la-mia-collezione h2 span {
+    color: #007bff;
+}
+
+.la-mia-collezione p,
+.la-mia-collezione .sezione,
+.la-mia-collezione .card h3,
+.la-mia-collezione .card p {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Stili per le sezioni e le card */
+.set-sezioni {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sezioni-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    display: flex;
+}
+
+.sezione {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.sezione.attiva {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.set-contenitore {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    width: 100%;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #333;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+    .card .prezzo {
+        font-weight: bold;
+        color: #007bff;
+    }
+    
+    /* Media query per dispositivi più piccoli */
+    @media (max-width: 768px) {
+        .set-contenitore {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+    }
+    
+    /* Stili per il divisore delle sezioni */
+    .cosa-e-secret-vault::before,
+    .la-mia-collezione::before,
+    .forum::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        height: 3px;
+        background-color: #007bff;
+        opacity: 0.3;
+    }
+    
+    /* Footer */
+    .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 40px 0;
+    }
+    
+    .footer .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    .footer-logo {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    .footer-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .footer-links li {
+        margin: 0 10px;
+    }
+    
+    .footer-links a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .footer-links a:hover {
+        color: #007bff;
+    }
+    
+    .footer-social {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .footer-social a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        margin: 0 5px;
+        transition: background-color 0.3s ease;
+        font-size: 1.2rem;
+        margin-left: 10px;
+    }
+    
+    .footer-social a:first-child {
+        margin-left: 0;
+    }
+    
+    .footer-social a:hover {
+        background-color: #007bff;
+    }
+    
+    .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 20px;
+        font-size: 0.8rem;
+    }
+    
+    @media (min-width: 768px) {
+        .footer-content {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+        .footer-logo {
+            margin-bottom: 0;
+        }
+    
+        .footer-links {
+            justify-content: flex-start;
+        }
+    
+        .footer-social {
+            margin-top: 0;
+        }
+    }
